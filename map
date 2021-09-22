@@ -1,0 +1,50 @@
+{
+  "$schema": "https://vega.github.io/schema/vega/v5.json",
+  "width": 900,
+  "height": 560,
+  "padding": {"top": 0, "left": 0, "right": 0, "bottom": 0},
+  "signals": [],
+  "data": [
+    {
+      "name": "aus",
+      "url": "https://raw.githubusercontent.com/Amelia-Wu/data-viz-2/main/aus",
+      "format": {"type": "topojson", "feature": "custom"},
+      "transform": [
+        {
+          "type": "geoshape",
+          "projection": "projection"
+        }
+      ]
+    }
+  ],
+  "scales": [],
+  "projections": [
+    {
+      "name": "projection",
+      "type": "albers"
+    }
+  ],
+  "marks": [
+    {
+      "type": "geoshape",
+      "from": {"data": "aus"},
+      "encode": {
+        "enter": {
+          "fill": {"value": "#dedede"},
+          "stroke": {"value": "white"}
+        },
+        "update": {
+          "path": {"field": "path"}
+        }
+      }
+    }
+  ]
+}
+
+  
+
+  
+
+  
+
+  
