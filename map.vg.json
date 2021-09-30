@@ -165,29 +165,6 @@
         }
       }
     }
-  ],
-  "layer": [
-    {
-      "selection": {
-        "continent_highlight": {
-          "type": "multi",
-          "fields": ["Departure"],
-          "bind": "legend"
-        }
-      },
-      "encoding": {
-        "size": {
-          "field": "passenger",
-          "type": "quantitative",
-          "scale": {
-            "type": "threshold",
-            "domain": [1000000, 10000000, 50000000, 100000000, 500000000],
-            "range": [10, 50, 150, 200, 300, 400]
-          },
-          "legend": {"format": ".1s"}
-        }
-      }
-    }
   ]
 }
 
