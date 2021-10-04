@@ -112,7 +112,8 @@
       "from": {"data": "custom.geo (3)"},
       "encode": {
         "enter": {
-          "fill": {"value": "pink"},
+          "fill": {"value": "steelblue"},
+          "fillOpacity": {"value": 0.8},
           "stroke": {"value": "white"}
         },
         "update": {
@@ -126,8 +127,7 @@
       "encode": {
         "enter": {
           "size": {"scale": "size", "field": "traffic.passenger"},
-          "fill": {"value": "steelblue"},
-          "fillOpacity": {"value": 0.8},
+          "fill": {"value": "grey"},
           "stroke": {"value": "white"},
           "strokeWidth": {"value": 1.5}
         },
