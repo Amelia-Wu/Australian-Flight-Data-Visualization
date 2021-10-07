@@ -13,7 +13,7 @@
         "bind": {
           "input": "range",
           "min": 8000,
-          "max": 1300000,
+          "max": 950000,
           "step": 1000,
           "name": "Minimum Passenger: "
         }
@@ -59,7 +59,7 @@
         "field": "Trips",
         "type": "quantitative",
         "title": "Trips",
-        "scale": {"type": "log", "domain": [10, 10000]}
+        "scale": {"type": "log", "domain": [100, 10000]}
       },
       "y": {
         "field": "LF",
