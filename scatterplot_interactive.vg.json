@@ -58,7 +58,7 @@
         "field": "Trips",
         "type": "quantitative",
         "title": "Trips",
-        "scale": {"type": "log", "domain": [50, 10000]}
+        "scale": {"type": "log", "domain": [10, 10000]}
       },
       "y": {
         "field": "LF",
@@ -121,7 +121,7 @@
           "align": "right",
           "baseline": "middle",
           "dx": -12,
-          "fontSize": 11.5,
+          "fontSize": 18,
           "fontStyle": "italic"
         },
         "encoding": {
