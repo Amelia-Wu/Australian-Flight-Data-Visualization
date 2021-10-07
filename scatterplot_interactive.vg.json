@@ -50,7 +50,7 @@
     ],
     "transform": [
       {"filter": "datum.LF > 50"},
-      {"filter": "datum.Trips > 10000"},
+      {"filter": "datum.Trips < 10000"},
       {"filter": "datum.Passenger > Passenger_Above"},
       {"filter": "State_selection == null || datum.State == State_selection"}
     ],
