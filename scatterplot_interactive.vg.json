@@ -58,7 +58,7 @@
         "field": "Trips",
         "type": "quantitative",
         "title": "Trips",
-        "scale": {"type": "log", "domain": [90, 10000]}
+        "scale": {"type": "log", "domain": [50, 10000]}
       },
       "y": {
         "field": "LF",
