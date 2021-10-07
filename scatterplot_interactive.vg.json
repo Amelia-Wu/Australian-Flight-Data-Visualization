@@ -50,6 +50,7 @@
     ],
     "transform": [
       {"filter": "datum.LF > 50"},
+      {"filter": "datum.Trips > 10000"},
       {"filter": "datum.Passenger > Passenger_Above"},
       {"filter": "State_selection == null || datum.State == State_selection"}
     ],
@@ -58,7 +59,7 @@
         "field": "Trips",
         "type": "quantitative",
         "title": "Trips",
-        "scale": {"type": "log", "domain": [10, 10100]}
+        "scale": {"type": "log", "domain": [10, 10000]}
       },
       "y": {
         "field": "LF",
