@@ -9,7 +9,7 @@
     "params": [
       {
         "name": "Passenger_Above",
-        "value": 0,
+        "value": 8000,
         "bind": {
           "input": "range",
           "min": 8000,
