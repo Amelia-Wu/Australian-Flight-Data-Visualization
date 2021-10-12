@@ -151,7 +151,8 @@
           "x": {"signal": "width", "offset": -680},
           "y": {"value": 280},
           "fill": {"value": "black"},
-          "fontSize": {"value": 22},
+          "fontSize": {"value": 20},
+          "fontStyle": {"value": "bold"},
           "align": {"value": "left"}
         },
         "update": {
@@ -167,7 +168,7 @@
           "x": {"signal": "width", "offset": -680},
           "y": {"value": 300},
           "fill": {"value": "black"},
-          "fontSize": {"value": 16},
+          "fontSize": {"value": 17},
           "align": {"value": "left"}
         },
         "update": {

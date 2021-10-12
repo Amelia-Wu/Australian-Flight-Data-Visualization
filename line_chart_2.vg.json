@@ -1,0 +1,15 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "title": {
+        "text": "International Airlines in 2019 & 2020",
+        "fontSize": 14,
+        "fontStyle": "normal"
+      },
+    "data": {"url": "https://raw.githubusercontent.com/Amelia-Wu/data-viz-2/data/2019%20passengers%20all%20year.csv"},
+    "mark": "line",
+    "encoding": {
+      "x": {"field": "Month", "type": "quantitative"},
+      "y": {"field": "International", "title": "Passengers", "type": "quantitative"},
+      "color": {"field": "Year", "type": "nominal"}
+    }
+  }

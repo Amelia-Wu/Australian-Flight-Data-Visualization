@@ -2,7 +2,11 @@
     "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
     "width": 800,
     "height": 600,
-    "title": "Australia Domestic Airline (June 2019)",
+    "title": {
+      "text": "Australia Domestic Airline (June 2019)",
+      "fontSize": 20,
+      "fontStyle": "normal"
+    },
     "data": {
       "url": "https://raw.githubusercontent.com/Amelia-Wu/data-viz-2/data/scatterplot.csv"
     },
