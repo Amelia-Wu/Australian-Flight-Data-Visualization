@@ -9,7 +9,7 @@
   <!-- Import pure.css -->
   <link rel="stylesheet" href="https://unpkg.com/purecss@2.0.3/build/pure-min.css" integrity="sha384-cg6SkqEOCV1NbJoCu11+bm0NvBRc8IYLRGXkmNrqUBfTjmMYwNKPWBTIKyw9mHNJ" crossorigin="anonymous">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  
+
   <!-- CSS file -->
   <link rel="stylesheet" type="text/css" href="css/styles.css" media="all">
 
@@ -73,18 +73,26 @@
 </div>
 <!-- end pure grid group -->
 
-      <script type="text/javascript">
-        var specVis1 = "map.vg.json";
-        vegaEmbed('#vis1', specVis1);
+  </div> <!-- end page -->
+   
+<script type="text/javascript">
+  var specVis1 = "map.vg.json";
+  var specVis2= "scatterplot_interactive.vg.json";
+  var specVis3 = "line_chart_1.vg.json";
 
-        var specVis2 = "scatterplot_interactive.vg.json";
-        vegaEmbed('#vis2', specVis2);
 
-        var specVis3 = "line_chart_1.vg.json";
-        vegaEmbed('#vis3', specVis3);
+  vegaEmbed('#vis1', specVis1, {"actions": false}).then(function(result) {
+    // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
+  }).catch(console.error);
+  
+   vegaEmbed('#vis2', specVis2, {"actions": false}).then(function(result) {
+    // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
+  }).catch(console.error);
 
-    </script>
-    
+  vegaEmbed('#vis3', specVis3, {"actions": false}).then(function(result) {
+    // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
+  }).catch(console.error);
+
+</script>
 </body>
-
 </html>
