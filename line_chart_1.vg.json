@@ -1,7 +1,7 @@
 {
     "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
     "title": {
-        "text": "Domestic Airlines in 2019 & 2020",
+        "text": "Domestic Flights in 2019 & 2020",
         "fontSize": 14,
         "fontStyle": "normal"
       },

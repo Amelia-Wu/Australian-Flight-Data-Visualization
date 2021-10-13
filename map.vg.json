@@ -14,8 +14,8 @@
     },
     {
       "name": "title",
-      "value": "Australia Domestic Airline (June 2019)",
-      "update": "hover ? hover.Departure : 'Australia Domestic Airline (June 2019)'"
+      "value": "Australia Domestic Flights (June 2019)",
+      "update": "hover ? hover.Departure : 'Australia Domestic Flights (June 2019)'"
     },
     {
       "name": "subtitle",
