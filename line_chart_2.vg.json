@@ -1,5 +1,7 @@
 {
     "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "width": 400,
+    "height": 400,
     "title": {
         "text": "International Flights in 2019 & 2020",
         "fontSize": 14,
