@@ -2,7 +2,7 @@
   "$schema": "https://vega.github.io/schema/vega/v5.json",
   "width": 600,
   "height": 300,
-  "padding": {"top": -250, "left": -50, "right": 50, "bottom": 0},
+  "padding": {"top": -250, "left": 0, "right": 10, "bottom": 0},
   "signals": [
     {
       "name": "hover",
@@ -148,10 +148,10 @@
       "interactive": false,
       "encode": {
         "enter": {
-          "x": {"signal": "width", "offset": -680},
-          "y": {"value": 280},
+          "x": {"signal": "width", "offset": -500},
+          "y": {"value": 300},
           "fill": {"value": "black"},
-          "fontSize": {"value": 20},
+          "fontSize": {"value": 17},
           "fontStyle": {"value": "bold"},
           "align": {"value": "left"}
         },
@@ -165,8 +165,8 @@
       "interactive": false,
       "encode": {
         "enter": {
-          "x": {"signal": "width", "offset": -680},
-          "y": {"value": 300},
+          "x": {"signal": "width", "offset": -500},
+          "y": {"value": 320},
           "fill": {"value": "black"},
           "fontSize": {"value": 17},
           "align": {"value": "left"}
