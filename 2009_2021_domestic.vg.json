@@ -12,7 +12,7 @@
                 "scale": { "domain": { "param": "brush" } },
                 "axis": { "title": "", "tickCount": 10 }
             },
-            "y": { "field": "Domestic", "type": "quantitative" }
+            "y": { "field": "Domestic", "type": "quantitative", "axis": { "title": "Passengers"} }
         }
     }, {
         "width": 750,
