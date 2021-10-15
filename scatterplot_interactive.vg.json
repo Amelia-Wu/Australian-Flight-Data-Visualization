@@ -63,13 +63,15 @@
         "field": "Trips",
         "type": "quantitative",
         "title": "Trips",
-        "scale": {"type": "log", "domain": [50, 10000]}
+        "scale": {"type": "log", "domain": [50, 10000]},
+        "axis": {"gridOpacity": 0.6}
       },
       "y": {
         "field": "LF",
         "type": "quantitative",
         "title": "Loading Factor %",
-        "scale": {"domain": [50, 90]}
+        "scale": {"domain": [50, 90]},
+        "axis": {"gridOpacity": 0.6}
       }
     },
     "layer": [

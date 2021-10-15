@@ -31,7 +31,7 @@
             "y": {
                 "field": "Domestic",
                 "type": "quantitative",
-                "axis": { "tickCount": 3, "grid": false }
+                "axis": { "tickCount": 3, "grid": false, "title": "Passengers" }
             }
         }
     }]
