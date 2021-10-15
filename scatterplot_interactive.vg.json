@@ -4,7 +4,7 @@
     "height": 500,
     "title": {
       "text": "Australia Domestic Flights (June 2019)",
-      "fontSize": 20,
+      "fontSize": 17,
       "fontStyle": "normal"
     },
     "data": {
@@ -18,7 +18,7 @@
           "input": "range",
           "min": 8000,
           "max": 950000,
-          "step": 1000,
+          "step": 100,
           "name": "Minimum Passenger: "
         }
       },
