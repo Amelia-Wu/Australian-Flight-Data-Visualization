@@ -1,0 +1,38 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "data": { "url": "https://raw.githubusercontent.com/Amelia-Wu/data-viz-2/data/2009-2021%20Domestic%20Passengers.csv" },
+    "vconcat": [{
+        "width": "container",
+        "height": 240,
+        "mark": "area",
+        "encoding": {
+            "x": {
+                "field": "Date",
+                "type": "temporal",
+                "scale": { "domain": { "param": "brush" } },
+                "axis": { "title": "", "tickCount": 10 }
+            },
+            "y": { "field": "Domestic", "type": "quantitative" }
+        }
+    }, {
+        "width": "container",
+        "height": 60,
+        "mark": "area",
+        "params": [{
+            "name": "brush",
+            "select": { "type": "interval", "encodings": ["x"] }
+        }],
+        "encoding": {
+            "x": {
+                "field": "Date",
+                "type": "temporal",
+                "axis": { "tickCount": 10 }
+            },
+            "y": {
+                "field": "Domestic",
+                "type": "quantitative",
+                "axis": { "tickCount": 3, "grid": false }
+            }
+        }
+    }]
+}

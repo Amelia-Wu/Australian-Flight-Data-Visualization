@@ -15,7 +15,7 @@
     {
       "name": "title",
       "value": "Australia Domestic Flights (June 2019)",
-      "update": "hover ? hover.Departure : 'Australia Domestic Flights (June 2019)'"
+      "update": "hover ? hover.Departure + ' (' + hover.latitude + ',' + hover.longitude + ')' : 'Australia Domestic Flights (June 2019)'"
     },
     {
       "name": "subtitle",
@@ -141,7 +141,11 @@
           "x": {"field": "x"},
           "y": {"field": "y"}
         }
-      }
+      },
+      "tooltip": [
+        {"field": "Departure", "type": "nominal"},
+        {"field": "Passenger", "type": "quantitative", "format": ","}
+      ]
     },
     {
       "type": "text",
@@ -187,7 +191,11 @@
           "strokeOpacity": {"value": 0.7}
         }
       }
-    }  
+    }
+  ],
+  "tooltip": [
+    {"field": "Departure", "type": "nominal"},
+    {"field": "Passenger", "type": "quantitative", "format": ","}
   ]
 }
 
