@@ -1,0 +1,153 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "width": 600,
+    "height": 500,
+    "title": {
+      "text": "Australia Domestic Flights (June 2019)",
+      "fontSize": 17,
+      "fontStyle": "normal"
+    },
+    "data": {
+      "url": "https://raw.githubusercontent.com/Amelia-Wu/data-viz-2/data/scatterplot.csv"
+    },
+    "params": [
+      {
+        "name": "Passenger_Above",
+        "value": 8000,
+        "bind": {
+          "input": "range",
+          "min": 8000,
+          "max": 950000,
+          "step": 100,
+          "name": "Minimum Passenger: "
+        }
+      },
+      {
+        "name": "State_selection",
+        "bind": {
+          "input": "select",
+          "options": [
+            null,
+            "NSW",
+            "ACT",
+            "VIC",
+            "QLD",
+            "WA",
+            "TAS",
+            "NT",
+            "SA"
+          ],
+          "labels":[
+            "Show All",
+            "NSW",
+            "ACT",
+            "VIC",
+            "QLD",
+            "WA",
+            "TAS",
+            "NT",
+            "SA"
+          ],
+          "name": "State Selection: "
+        }
+      }
+    ],
+    "transform": [
+      {"filter": "datum.LF > 50"},
+      {"filter": "datum.Trips < 10000"},
+      {"filter": "datum.Passenger > Passenger_Above"},
+      {"filter": "State_selection == null || datum.State == State_selection"}
+    ],
+    "encoding": {
+      "x": {
+        "field": "Trips",
+        "type": "quantitative",
+        "title": "Trips",
+        "scale": {"type": "log", "domain": [50, 10000]},
+        "axis": {"gridOpacity": 0.6}
+      },
+      "y": {
+        "field": "LF",
+        "type": "quantitative",
+        "title": "Loading Factor %",
+        "scale": {"domain": [50, 90]},
+        "axis": {"gridOpacity": 0.6}
+      }
+    },
+    "layer": [
+      {
+        "mark": "circle",
+        "encoding": {
+          "size": {
+            "field": "Passenger",
+            "type": "quantitative",
+            "scale": {
+              "type": "threshold",
+              "domain": [15000, 30000, 50000, 100000, 300000],
+              "range": [20, 50, 150, 250, 350, 500]
+            },
+            "legend": {"format": ".1s"}
+          },
+          "color": {
+            "field": "State",
+            "type": "nominal",
+            "scale": {
+              "domain": [
+                "NSW",
+                "ACT",
+                "VIC",
+                "QLD",
+                "WA",
+                "TAS",
+                "NT",
+                "SA"
+              ],
+              "range": [
+                "red",
+                "orange",
+                "yellow",
+                "brown",
+                "blue",
+                "purple",
+                "pink",
+                "cyan"
+              ]
+            }
+          },
+          "tooltip": [
+            {"field": "Departure", "type": "nominal"},
+            {"field": "Trips", "type": "quantitative", "format": ","},
+            {"field": "Passenger", "type": "quantitative", "format": ","},
+            {"field": "LF", "type": "quantitative", "format": ","}
+          ]
+        }
+      },
+      {
+        "mark": {
+          "type": "text",
+          "align": "right",
+          "baseline": "middle",
+          "dx": -12,
+          "fontSize": 11.5,
+          "fontStyle": "italic"
+        },
+        "encoding": {
+          "text": {"field": "Departure", "type": "nominal"},
+          "color": {"value": "black"},
+          "opacity": {
+            "condition": {
+              "test": "datum['Departure'] == 'Melbourne' || datum['Departure'] == 'Hobart'|| datum['Departure'] == 'Brisbane'|| datum['Departure'] == 'Sydney'|| datum['Departure'] == 'Darwin'|| datum['Departure'] == 'Perth'|| datum['Departure'] == 'Adelaide'|| datum['Departure'] == 'Canberra'",
+              "value": 1
+            },
+            "value": 0
+          },
+          "tooltip": [
+            {"field": "Departure", "type": "nominal"},
+            {"field": "Trips", "type": "quantitative", "format": ","},
+            {"field": "Passenger", "type": "quantitative", "format": ","},
+            {"field": "LF", "type": "quantitative", "format": ","}
+          ]
+        }
+      }
+    ]
+  }
