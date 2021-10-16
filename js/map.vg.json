@@ -141,11 +141,7 @@
           "x": {"field": "x"},
           "y": {"field": "y"}
         }
-      },
-      "tooltip": [
-        {"field": "Departure", "type": "nominal"},
-        {"field": "Passenger", "type": "quantitative", "format": ","}
-      ]
+      }
     },
     {
       "type": "text",
@@ -192,10 +188,6 @@
         }
       }
     }
-  ],
-  "tooltip": [
-    {"field": "Departure", "type": "nominal"},
-    {"field": "Passenger", "type": "quantitative", "format": ","}
   ]
 }
 
