@@ -1,6 +1,6 @@
 {
     "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-    "data": { "url": "https://raw.githubusercontent.com/Amelia-Wu/data-viz-2/data/2009-2021%20Domestic%20Passengers.csv" },
+    "data": { "url": "https://raw.githubusercontent.com/Amelia-Wu/data-viz-2/main/data/2009-2021%20Domestic%20Passengers.csv" },
     "vconcat": [{
         "width": 750,
         "height": 240,
