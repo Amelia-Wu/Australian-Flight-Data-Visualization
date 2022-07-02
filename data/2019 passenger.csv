@@ -1,4 +1,4 @@
-Departure,Destination,PASSENGERS,passengers,
+Origin,Destination,originalPassengers,passengers,
 Adelaide,Melbourne, 189 519,189.519 ,
 Adelaide,Sydney, 137 571,137.571 ,
 Adelaide,Brisbane, 64 411,64.411 ,
