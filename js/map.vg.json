@@ -26,7 +26,7 @@
   "data": [
     {
       "name": "custom.geo (3)",
-      "url": "https://raw.githubusercontent.com/Amelia-Wu/data-viz-2/main/data/custom.geo%20(3).json",
+      "url": "https://raw.githubusercontent.com/Amelia-Wu/data-viz-2/main/data/custom.geo.json",
       "format": {"type": "topojson", "feature": "custom.geo (3)"},
       "transform": [
         {
